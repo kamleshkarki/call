@@ -1,0 +1,27 @@
+#include<iostream>
+using namespace std;
+class Temperature{
+    //formula (F-32)*(0.5556)
+    float Temp;
+public:
+        getdata();
+        display();
+        };
+
+Temperature :: getdata()
+{
+    cout<<"Enter the Temperature in Fahrenheit :";
+    cin>> Temp;
+    Temp=(Temp-32)*(0.5556);
+}
+
+Temperature ::display(){
+cout<<"\nCalculate Temperature in Fahrenheit :"<<Temp;
+
+}
+
+int  main(){
+Temperature p;
+p.getdata();
+p.display();
+}
