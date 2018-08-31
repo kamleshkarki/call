@@ -1,0 +1,28 @@
+#include<iostream>
+using namespace std;
+class person{
+char Name[30];
+int age;
+public:
+    void getdata(void);
+    void display(void);
+};
+
+void person::getdata(void){
+    cout<<"Enter The Person Name";
+    cin>>Name;
+    cout<<"Enter The Person Age";
+    cin>>age;
+}
+
+void person::display(void){
+cout<<"\nName:" <<Name;
+cout<<"\nAge:" <<age;
+}
+int main()
+{
+ person p;
+ p.getdata();
+ p.display();
+ return 0;
+}
