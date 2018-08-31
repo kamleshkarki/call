@@ -1,0 +1,33 @@
+#include<iostream>
+using namespace std;
+class Number{
+int number1,number2;
+public:
+        void getdata();
+        void display();
+};
+void Number ::getdata()
+{
+    cout<<"Enter the first number :";
+    cin>>number1;
+    cout<<"Enter the second number :";
+    cin>>number2;
+}
+
+void Number ::display()
+{
+if(number1>number2)
+    {
+        cout<<"\nFirst Number is grater:"<<number1;
+    }
+    else{
+            cout<<"\nSecond Number is grater:"<<number2;
+    }
+
+}
+int main(){
+Number n;
+n.getdata();
+n.display();
+return 0;
+}
